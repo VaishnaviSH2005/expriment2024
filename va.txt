@@ -1,1 +1,27 @@
-hi hello git
+void push(int element) 
+{ 
+if(top==MAX-1) 
+printf("the stack is overflow\n"); 
+else 
+{ 
+top++; 
+printf("enter the element to be pushed into the stack\n"); 
+scanf("%d",&element); 
+stack[top]=element; 
+} 
+} 
+int pop() 
+{ 
+char element; 
+if(top==-1) 
+{ 
+printf("stack is underflow\n"); 
+return 0; 
+} 
+else 
+{ 
+element=stack[top]; 
+top--; 
+return element; 
+} 
+} 
