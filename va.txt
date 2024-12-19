@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 void display() 
 { 
 int i; 
@@ -38,6 +39,39 @@ printf("string is not palindrome\n");
 else
 printf("string is palindrome\n");
 =======
+=======
+<<<<<<< HEAD
+void push(int element) 
+{ 
+if(top==MAX-1) 
+printf("the stack is overflow\n"); 
+else 
+{ 
+top++; 
+printf("enter the element to be pushed into the stack\n"); 
+scanf("%d",&element); 
+stack[top]=element; 
+} 
+} 
+int pop() 
+{ 
+char element; 
+if(top==-1) 
+{ 
+printf("stack is underflow\n"); 
+return 0; 
+} 
+else 
+{ 
+element=stack[top]; 
+top--; 
+return element; 
+} 
+} 
+=======
+=======
+>>>>>>> dde6038150a0cf17148b71926a5063bafc0c796b
+>>>>>>> 90fe330f13ef3e47edb3565262a6088c0464c35b
 #include<stdio.h> 
 #include<conio.h> 
 #define MAX 5 
@@ -73,5 +107,13 @@ default:printf("invalid choice\n");
 break;
 }
 }
+<<<<<<< HEAD
 >>>>>>> dde6038150a0cf17148b71926a5063bafc0c796b
 }
+=======
+}
+<<<<<<< HEAD
+>>>>>>> dde6038150a0cf17148b71926a5063bafc0c796b
+=======
+>>>>>>> dde6038150a0cf17148b71926a5063bafc0c796b
+>>>>>>> 90fe330f13ef3e47edb3565262a6088c0464c35b
