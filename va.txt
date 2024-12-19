@@ -1,1 +1,39 @@
-hi hello git
+void display() 
+{ 
+int i; 
+if(top==-1) 
+printf("the stack is empty\n"); 
+else 
+{ 
+printf("the contents of the stack:\n"); 
+for(i=top;i>=0;i--) 
+printf("%d\n",stack[i]); 
+} 
+} 
+voidpalin() 
+{ 
+char s[20],st[20]; 
+inti,j,flag=1; 
+charele; 
+top=-1; 
+printf("\nEnter the string:\n"); 
+fflush(stdin); 
+gets(st); 
+for(i=0;st[i]!='\0';i++) 
+{ 
+s[++top]=st[i]; 
+} 
+printf("\nThe contents of the stack are:\n"); 
+for(i=top;i>=0;i--) 
+printf("%c\n",st[i]);
+for(i=0;st[i]!='\0';i++)
+if(st[i]!=s[top--])
+{
+flag=0;
+break;
+}
+if(flag==0)
+printf("string is not palindrome\n");
+else
+printf("string is palindrome\n");
+}
